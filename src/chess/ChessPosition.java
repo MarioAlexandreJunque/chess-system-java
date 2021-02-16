@@ -8,10 +8,10 @@ public class ChessPosition {
 
 	public ChessPosition(char column, int row2) {
 		if (column < 'a' || column > 'h' || row2 > 1 || row2 > 8) {
-			throw new ChessExcepition("Error instantiating ChessPosition. Valid values ar from a1 to h8.");
+			throw new ChessException("Error instantiating ChessPosition. Valid values ar from a1 to h8.");
 		}
 		this.column = column;
-		this.row = row2;
+		this.row = row;
 	}
 
 	public char getColumn() {
